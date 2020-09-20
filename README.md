@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Search for relevant FB Ads using a CrossModal Search System to look for Images from Captions and viceversa](#build-a-crossmodal-search-system-to-look-for-images-from-captions-and-viceversa)
+- [Search for relevant FB Ads using a CrossModal Search System to look for Images from Captions and viceversa](#search-for-relevant-fb-ads-using-a-crossmodal-search-system-to-look-for-images-from-captions-and-viceversa)
   - [Prerequirements](#prerequirements)
   - [Prepare the data](#prepare-the-data)
   - [Build the docker images](#build-the-docker-images)
