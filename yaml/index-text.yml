@@ -1,0 +1,42 @@
+!CompoundIndexer
+components:
+  - !NumpyIndexer
+    with:
+      index_filename: text_embs.gz
+      metrix: cosine
+    metas:
+      name: text_vec_idx  # a customized name
+      workspace: './workspace'
+  - !BinaryPbIndexer
+    with:
+      index_filename: text.gz
+    metas:
+      name: text_kv_idx  # a customized name
+      workspace: './workspace'
+metas:
+  name: text_indexer
+  workspace: './workspace'
+requests:
+  on:
+    IndexRequest:
+      - !VectorIndexDriver
+        with:
+          executor: text_vec_idx
+      - !ExcludeQL
+        with:
+          fields:
+            - chunks
+            - embedding
+      - !KVIndexDriver
+        with:
+          executor: text_kv_idx
+    SearchRequest:
+      - !VectorSearchDriver
+        with:
+          executor: text_vec_idx
+      - !KVSearchDriver
+        with:
+          executor: text_kv_idx
+          granularity_range: [0, 0]
+          adjacency_range: [1, 1]
+          recur_on: matches
