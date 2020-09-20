@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Build a CrossModal Search System to look for Images from Captions and viceversa](#build-a-crossmodal-search-system-to-look-for-images-from-captions-and-viceversa)
+- [Search for relevant FB Ads using a CrossModal Search System to look for Images from Captions and viceversa](#build-a-crossmodal-search-system-to-look-for-images-from-captions-and-viceversa)
   - [Prerequirements](#prerequirements)
   - [Prepare the data](#prepare-the-data)
   - [Build the docker images](#build-the-docker-images)
@@ -14,7 +14,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Build a CrossModal Search System to look for Images from Captions and viceversa
+# Search for relevant FB Ads using a CrossModal Search System to look for Images from Captions and viceversa
 <p align="center">
  
 [![Jina](https://github.com/jina-ai/jina/blob/master/.github/badges/jina-badge.svg "We fully commit to open-source")](https://jina.ai)
